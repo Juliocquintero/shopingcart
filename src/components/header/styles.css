@@ -1,0 +1,37 @@
+header {
+  height: 60px;
+  min-width: 320px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.inner-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.shoping-cart-button-toggle {
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.fa-shopping-cart {
+  color: #ff6700;
+}
+
+.shoping-cart-button-toggle {
+  border: none;
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  bottom: 5%;
+  right: 5%;
+  z-index: 998;
+}

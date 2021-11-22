@@ -1,0 +1,124 @@
+.cart-item {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.1fr 0.55fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas:
+    'button image name name name'
+    'button image price cant subtotal';
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-color-50);
+  padding: 1rem 0;
+}
+
+.cart-item-button {
+  grid-area: button;
+}
+
+.cart-item--image {
+  height: 80px;
+  margin: 0;
+  grid-area: image;
+}
+
+.cart-item-product {
+  display: flex;
+}
+
+.cart-item--serie {
+  font-size: 10.4px;
+  opacity: 0.8;
+  text-align: justify;
+}
+
+.cart-item--name {
+  text-align: justify;
+  margin-top: 10px;
+  grid-area: name;
+}
+
+.cart-item--price,
+.cart-item--subtotal {
+  font-size: 1.5rem;
+}
+
+.cart-item--price {
+  grid-area: price;
+}
+
+.cart-item--subtotal {
+  grid-area: subtotal;
+}
+
+.cart-item .cart-item--name {
+  font-size: 1.2rem;
+  /* color: var(--primary-color); */
+  font-family: Lato, sans-serif;
+}
+
+.cart-item--quantity {
+  grid-area: cant;
+  font-size: 1.4rem;
+  font-family: Lato, sans-serif;
+  height: 2.5rem;
+}
+
+.button-minus,
+.button-more {
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  border: transparent;
+  padding: 0px 5px;
+  height: 100%;
+}
+
+.button-minus {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.button-more {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.input-quantity,
+.input-quantity::-webkit-inner-spin-button,
+.input-quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  text-align: center;
+  max-width: 30px;
+  border: 0.5px solid var(--primary-color);
+  outline: none;
+  height: 100%;
+}
+
+.cart-item-button {
+  border: none;
+  color: var(--primary-color);
+  background-color: transparent;
+  border-radius: 0;
+  font-weight: normal;
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+  padding: 0 auto;
+}
+
+@media (min-width: 764px) {
+  .cart-item {
+    grid-template-columns: 0.1fr 0.25fr 0.65fr 0.25fr 0.25fr 0.25fr;
+    grid-template-areas: 'button image name price cant subtotal';
+  }
+  .cart-item-button {
+    font-size: 24px;
+  }
+  .cart-item--image {
+    height: 100px;
+  }
+
+  .cart-item .cart-item--name {
+    font-size: 1.6rem;
+  }
+}
