@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './assets/styles/App.css';
-import CartBar from './components/cartBar';
-import Header from './components/header';
-import ModalDetail from './components/modalDetail/modalDetail';
-import ProductList from './components/productList/productList';
+import CartBar from './components/CartBar';
+import Header from './components/Header';
+import ModalDetail from './components/ModalDetail';
+import ProductList from './components/ProductList';
+
 import { TYPES } from './redux/actions';
 
 const App = () => {

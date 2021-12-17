@@ -21,10 +21,7 @@ const ProductItem = ({ data, addToCart, handleContentViewed, handleShowModal }) 
 
       <span className="product-card--price"> ${price.toLocaleString()}</span>
       <button className="product-card--button" onClick={() => addToCart(id)}>
-        Add to cart
-        <span>
-          <i className="fas fa-shopping-cart"></i>
-        </span>
+        Añadir al carrito
       </button>
     </article>
   );

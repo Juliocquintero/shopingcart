@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import CartItem from '../cartItem/CartItem';
+import CartItem from '../CartItem/cartItem';
 import './styles.css';
 const CartBar = ({
   cart,
@@ -10,10 +10,6 @@ const CartBar = ({
   clearCart,
   showCart,
 }) => {
-  // console.table(cart);
-  // const total = cart?.reduce(function (valorAnterior = [0], valorActual) {
-  //   return valorAnterior + valorActual;
-  // });
   const [total, setTotal] = useState(0);
   const handleClearCart = () => {
     const confirm = window.confirm('Are you sure of remove all items of cart?');
@@ -27,9 +23,9 @@ const CartBar = ({
     <section className="cart-wrapper">
       <div className={showCart ? 'cart-list show' : 'cart-list'}>
         <div className="cart-list-header">
-          <span className="cart-list-header-item">product</span>
-          <span className="cart-list-header-item">price</span>
-          <span className="cart-list-header-item">units</span>
+          <span className="cart-list-header-item">Producto</span>
+          <span className="cart-list-header-item">Precio</span>
+          <span className="cart-list-header-item">Cant</span>
           <span className="cart-list-header-item">subtotal</span>
         </div>
 
@@ -51,10 +47,12 @@ const CartBar = ({
         </div>
 
         <div className="cart-list-footer">
-          {cart?.length > 0 && (
+          {cart?.length > 0 ? (
             <button className="cart-button" onClick={handleClearCart}>
               Limpiar carrito
             </button>
+          ) : (
+            <div></div>
           )}
 
           <div className="cart-list-footer-total">

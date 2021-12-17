@@ -1,6 +1,6 @@
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Content from './content';
+import Content from './Content';
 import { useSelector } from 'react-redux';
 
 const ModalDetail = ({ showModal, handleShowModal, addToCart }) => {

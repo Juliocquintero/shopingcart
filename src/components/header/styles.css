@@ -35,3 +35,7 @@ header {
   right: 5%;
   z-index: 998;
 }
+
+.header-logo-dark {
+  width: 46px;
+}

@@ -35,7 +35,7 @@
 
 .cart-list-header-item {
   font-size: 1.5rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 500;
 }
 .cart-list-header > .cart-list-header-item:nth-child(1) {
@@ -102,13 +102,13 @@
 
 .cart-list-footer-total-caption {
   text-align: end;
-  /* border-right: var(--primary-color-50) 1px solid; */
   font-weight: bold;
 }
 
 .cart-item-default {
   margin: 0;
   padding: 1rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 764px) {

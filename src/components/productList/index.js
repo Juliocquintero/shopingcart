@@ -1,4 +1,4 @@
-import ProductItem from '../productItem/ProductItem';
+import ProductItem from '../ProductItem';
 import './styles.css';
 const ProductList = ({ products, addToCart, handleContentViewed, handleShowModal }) => {
   return (
